@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="robots" content="noindex">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heart Core</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
+<!-- build:css assets/css/all.css -->
+<link rel="stylesheet" href="assets/css/plugins.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- endbuild -->
+<!-- build:js assets/js/all.js defer -->
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/script.js"></script>
+<!-- endbuild -->
+
+</head>
+<body>
+	<div class="main-wrapper contact-page">
+		<div class="wrap-nav">
+			<div class="container nav-container">
+				<header class="header">
+					<div class="head-menu">
+						<div class="wrap-nav-list">
+							<a href="homepage.html">
+								<picture>
+									<source srcset="assets/images/webp/logo.webp" type="image/webp" class="logo">
+									<img src="assets/images/logo.svg" class="logo" alt="logo">
+								</picture>
+							</a>
+							<ul class="list-menu nav toggleMenu">
+								<li><a href="homepage.html">Home</a></li>
+								<li><a href="product.html">Product</a></li>
+								<li><a href="solutions.html">Solutions</a></li>
+								<li><a href="customers.html">Customers</a></li>
+								<li><a href="" data-toggle="modal" data-target="#partnersModalLong">Partners</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li class="wrap-btn"><a href="contact.html" class="btn contact-btn">Contact us</a></li>
+							</ul>
+						</div>
+						<div class="custom_navbar"> 
+							<button class="navbar-toggler showMenu">
+								<span class="header_btn">
+									<span class="bit-1"></span>
+									<span class="bit-2"></span>
+									<span class="bit-3"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<section class="contact-section request-section">
+			<div class="container">
+				<h1 class="title-hero">Contact us</h1>
+				<div class="contact-wrap">
+					<div class="contact-description">
+						<h4 class="description-title">We are here to answer your inquiries</h4>
+						<p class="txt">Please fill in the form or use the following address: a sales representative will get in touch with you.</p>
+						<a href="https://maps.google.com?saddr=Current+Location&daddr=37.758391,-122.406329" class="address-item"><img src="assets/images/location-pin.svg" alt="">385 Noah Place Suite 878</a>
+						<a href="tel:8772557945" class="address-item"><img src="assets/images/phone-call.svg" alt="">877-255-7945</a>
+						<a href="mailto:info@heartcore.com" class="address-item"><img src="assets/images/mail.svg" alt="">info@heartcore.com</a>
+					</div>
+
+					<form class="contact-form jsFormEmail" action="" method="post">
+						<div class="nameVilidBox">
+							<input type="text" name="firstname" placeholder="First name*" class="field-input nameValid required">
+						</div>
+						<div class="nameVilidBox">
+							<input type="text" name="lastname" placeholder="Last Name*" class="field-input nameValid required">
+						</div>
+						<div class="mailVilidBox">
+							<input type="email" name="email" placeholder="Email*" class="field-input required">
+						</div>
+
+						<input type="text" name="phone" placeholder="Phone" class="field-input">
+						<input type="text" name="company" placeholder="Company" class="field-input">
+
+						<div class="control-group">
+							<textarea name="message" placeholder="Message*" class="field-input required"></textarea>
+						</div>
+						<button type="submit" class="btn red-btn form-btn">Submit</button>
+					</form>
+					<p class="alert-message">
+						<span class="is-success">Thank you. We will reach out to you shortly.</span>
+						<span class="is-error">Something went wrong, go back and try again!</span>
+					</p>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="map-section">
+			<!-- map -->
+			<div class="map-section">
+				<div class="location-section">
+					<div class="map-wrap">
+						<div id="map" class="map"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="container footer-wrap">
+				<ul class="footer-nav">
+					<li><a href="homepage.html"><img src="assets/images/logo-sign.png" alt="">Home</a></li>
+					<li><a href="product.html">Product</a></li>
+					<li><a href="solutions.html">Solutions</a></li>
+					<li><a href="customers.html">Customers</a></li>
+					<li><a href="" data-toggle="modal" data-target="#partnersModalLong">Partners</a></li>
+					<li><a href="about.html">About us</a></li>
+				</ul>
+				<p class="copyright">©2019 - Heartcore &nbsp;|&nbsp;&nbsp; All right reserved</p>
+			</div>
+		</section>
+		<div class="overlay"></div>
+
+		<!-- Partners Modal -->
+		<div class="modal fade" id="partnersModalLong" tabindex="-1" role="dialog" aria-labelledby="partnersModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="request-section">
+							<h2 class="title-section">Become a partner</h2>
+
+							<form class="rpa-form jsFormEmail" action="" method="post">
+								<div class="control-group nameVilidBox">
+									<label class="label-item">First name *</label>
+									<input type="text" name="firstname" placeholder="First name" class="field-input nameValid required">
+								</div>
+								<div class="control-group nameVilidBox">
+									<label class="label-item">Last Name *</label>
+									<input type="text" name="lastname" placeholder="Last Name" class="field-input nameValid required">
+								</div>
+								<div class="control-group phoneVilidBox">
+									<label class="label-item">Phone number *</label>
+									<input type="text" name="phone" placeholder="Phone number" class="field-input namePhone required">
+								</div>
+								<div class="control-group mailVilidBox">
+									<label class="label-item">Email *</label>
+									<input type="email" name="email" placeholder="Email" class="field-input required">
+								</div>
+								<div class="control-group nameVilidBox">
+									<label class="label-item">Company *</label>
+									<input type="text" name="company" placeholder="Company" class="field-input required">
+								</div>
+
+								<label class="label-item">Title</label>
+								<input type="text" name="title" placeholder="Select" class="field-input">
+
+								<p class="label-item">Currently Use RPA? </p>
+								<div class="radio-wrap">
+									<input type="radio" id="radio-item-2" name="radio_group" value="Yes">
+									<label class="" for="radio-item-2">Yes</label>
+									<input type="radio" id="radio-item-2.1" name="radio_group" value="No" checked>
+									<label class="" for="radio-item-2.1">No</label>
+								</div>
+
+								<div class="control-group">
+									<label class="label-item">How can we help you?</label>
+									<textarea name="message" placeholder="Message*" class="field-input nameValid required"></textarea>
+								</div>
+
+								<button type="submit" class="btn red-btn form-btn">Submit</button>
+							</form>
+							<p class="alert-message">
+								<span class="is-success">Thank you. We will reach out to you shortly.</span>
+								<span class="is-error">Something went wrong, go back and try again!</span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzA_UZs2rTiBeIXjtNifS6FmGlAw0PlTE&libraries=places&callback=initMap"></script>
+</body>
+</html>

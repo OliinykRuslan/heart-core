@@ -1,0 +1,28 @@
+.modal {
+	padding: 0!important;
+	.request-section {
+		padding: 0;
+	}
+	.modal-header {
+		display: block;
+		border: 0;
+		@media only screen and (min-width: 992px) {
+			display: none;
+		}
+		.close {
+			padding: 5px 0 15px;
+		}
+	}
+	.modal-dialog {
+		max-width: 975px;
+	}
+	.modal-body {
+		padding: 0;
+	}
+	.modal-content {
+		padding: 64px 0 78px;
+		@media only screen and (max-width: 991px) {
+			padding: 0 15px 35px;
+		}
+	}
+}

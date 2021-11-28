@@ -1,0 +1,331 @@
+.rpa-page {
+	// section 1
+	.hero {
+		text-align: center;
+		background-color: #f7f5f2;
+		padding: 0 0 175px;
+		@media only screen and (max-width: 1280px) {
+			padding: 0 0 150px;
+		}
+		@media only screen and (max-width: 767px) {
+			padding: 0 0 120px;
+		}
+		.title-hero {
+			padding: 53px 0 16px;
+			margin: 0;
+		}
+		.txt {
+			max-width: 509px;
+			margin: auto;
+		}
+		.title-section {
+			font-size: 38px;
+			padding: 36px 0 70px;
+			@media only screen and (max-width: 991px) {
+				padding: 36px 0 50px;
+				font-size: 24px;
+			}
+		}
+		.tasks-rpa {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			max-width: 1145px;
+			margin: auto;
+			@media only screen and (max-width: 1280px) {
+				justify-content: center;
+			}
+			@media only screen and (max-width: 991px) {
+				justify-content: center;
+			}
+		}
+		.rpa-item {
+			width: 100%;
+			max-width: 160px;
+			@media only screen and (max-width: 1280px) {
+				margin-bottom: 25px;
+			}
+			@media only screen and (max-width: 767px) {
+				flex: 0 0 33%;
+				max-width: 33%;
+			}
+			@media only screen and (max-width: 479px) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+			.rpa-title {
+				font-family: $Montserrat;
+				font-weight: $bold;
+				font-size: 21px;
+				color: #424b5a;
+				line-height: 1.48;
+				@media only screen and (max-width: 991px) {
+					font-size: 16px;
+				}
+			}
+			img {
+				max-width: 96px;
+				padding: 0 0 23px;
+			}	
+		}
+	}
+	//section 2
+	.video-section{
+		padding-bottom: 90px;
+		@media only screen and (max-width: 991px) {
+			padding-bottom: 50px;
+		}
+		.video-container {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: -98px auto 0;
+			max-width: 875px;
+			max-height: 806px;
+			.start-video {
+				position: absolute;
+				padding: 10px;
+				top: calc(50% - 32px);
+				left: calc(50% - 32px);
+				opacity: .3;
+				cursor: pointer;
+				transition: all 0.3s;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			#player {
+				max-height: 506px;
+			}
+			.thumbnail_container {
+				width: 875px;
+				overflow: hidden;
+				background-color: #000;
+				@media only screen and (min-width: 992px) {
+					height: 506px;
+				}
+			}
+			img.thumbnail {
+				width: 100%;
+				height: auto;
+				opacity: 0.5;
+			}
+		}
+	}
+	//section 3
+	.benefits-section {
+		background-color: #f7f5f2;
+		padding: 113px 0 120px;
+		@media only screen and (max-width: 991px) {
+			padding: 50px 0;
+		}
+		.title-hero {
+			font-weight: 300;
+			text-align: center;
+			max-width: 875px;
+			margin: auto;
+			padding: 0 0 69px;
+			@media only screen and (max-width: 991px) {
+				padding: 0 0 35px;
+			}
+		}
+		.wrap-benefits {
+			@media only screen and (max-width: 1279px) {
+				flex-direction: column;
+				align-items: center;
+			}
+			.wrap-img {
+				@media only screen and (min-width: 1280px) {
+					margin: 0 50px 0 55px;
+				}
+				img {
+					max-width: 100%;
+					@media only screen and (min-width: 768px) {
+						max-width: 555px;
+					}
+				}
+			}
+		}
+		.wrap-benefits {
+			display: flex;
+		}	
+		.wrap-text {
+			max-width: 486px;
+			margin-top: 38px;
+			.list-title {
+				font-weight: $bold;
+				text-align: left;
+				padding: 0;
+				margin-bottom: 40px;
+			}
+			.check-list {
+				margin-left: 10px;
+				li {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+// section 4
+.request-section {
+	text-align: center;
+	padding: 102px 0;
+	@media only screen and (max-width: 991px) {
+		padding: 50px 0;
+	}
+	.title-section {
+		margin: 0 0 39px;
+		font-size: 50px;
+		color: #424b5a;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 300;
+		line-height: 1.28;
+		@media only screen and (max-width: 991px) {
+			font-size: 32px;
+		}
+	}
+}
+.rpa-form {
+	max-width: 451px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	.label-item {
+		text-align: start;
+		font-family: $WorkSans;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #424b5a;
+		padding: 0 0 5px 0;
+		margin: 0;
+	}
+	input, select {
+		border: 1px solid #919ba3;
+		border-radius: 3px;
+		font-family: $WorkSans;
+		font-size: 14px;
+		margin-bottom: 24px;
+		line-height: 1;
+		padding: 11px 8px;
+		&.error {
+			margin-bottom: 5px;
+		}
+	}
+	input {
+		&::placeholder {
+			font-size: 14px;
+			color: #c2d1d9;
+		}
+	}
+	.btn {
+		font-size: 12px;
+		line-height: 1.5;
+		border: none;
+	}
+	.custom-select {
+		position: relative;
+		display: inline-block;
+		&:after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5px 5px 0 5px;
+			border-color: #424b5a transparent transparent transparent;
+			position: absolute;
+			right: 14px;
+			top: calc(50% - 14px);
+			z-index: 1;
+			pointer-events: none;
+			box-sizing: border-box;
+			border-radius: 50%;
+		}
+		select{
+			color: #c2d1d9;
+			padding: 12px 8px;
+			width: 100%;
+			padding-right: 25px;
+			appearance: none;
+			option {
+				padding: 40px 0;
+			}
+		}
+	}
+	textarea {
+		height: 96px;
+		border-radius: 3px;
+		font-size: 14px;
+		padding: 5px 10px;
+		&::placeholder {
+			font-family: $WorkSans;
+			font-size: 14px;
+			color: #c2d1d9;
+		}
+	}
+	.control-group {
+		display: flex;
+		flex-direction: column;
+	}
+	.btn {
+		margin-top: 24px;
+	}
+}
+// radio buttons
+.radio-wrap {
+	display: flex;
+	padding: 4px 0px 27px;
+	[type="radio"]:checked,
+	[type="radio"]:not(:checked) {
+		position: absolute;
+		left: -9999px;
+	}
+	[type="radio"]:checked + label,
+	[type="radio"]:not(:checked) + label {
+		position: relative;
+		padding-left: 23px;
+		cursor: pointer;
+		line-height: 1;
+		font-family: $WorkSans;
+		font-size: 16px;
+		display: inline-block;
+		color: #424b5a;
+		margin: 0 54px 0 0;
+		user-select: none;
+	}
+	[type="radio"]:checked + label:before,
+	[type="radio"]:not(:checked) + label:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #919ba3;
+		border-radius: 100%;
+	}
+	[type="radio"]:checked + label:before {
+		border: 1px solid #b60005;
+	}
+	[type="radio"]:checked + label:after,
+	[type="radio"]:not(:checked) + label:after {
+		content: '';
+		width: 12px;
+		height: 12px;
+		background: #b60005;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		border-radius: 100%;
+		transition: all 0.2s ease;
+	}
+	[type="radio"]:not(:checked) + label:after {
+		opacity: 0;
+		transform: scale(0);
+	}
+	[type="radio"]:checked + label:after {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

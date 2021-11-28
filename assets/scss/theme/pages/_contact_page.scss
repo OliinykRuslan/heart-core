@@ -1,0 +1,156 @@
+.contact-page {	
+	.contact-section{
+		background-color: #f7f5f2;	
+		padding: 64px 0 55px;
+		text-align: left;
+		@media (max-width: 767px) {
+			padding: 30px 0;
+		}
+	}
+	.title-hero {
+		text-align: center;
+		margin: 0;
+		margin-bottom: 54px;
+		@media (max-width: 767px) {
+			margin-bottom: 25px;
+		}
+	}
+	.contact-wrap{
+		display: flex;
+		justify-content: center;
+		@media (max-width: 767px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	.contact-description {
+		max-width: 360px;
+		.description-title {
+			font-family: $Montserrat;
+			font-weight: $bold;
+			font-size: 21px;
+			line-height: 1.48;
+			color: #424b5a;
+			margin-bottom: 16px;
+			@media (max-width: 767px) {
+				text-align: center;
+			}
+		}
+		.txt {
+			font-family: $WorkSans;
+			font-size: 14px;
+			line-height: 1.5;
+			color: #a1aeb7;
+			margin-bottom: 25px;
+			@media (max-width: 767px) {
+				text-align: center;
+			}
+		}
+		.address-item {
+			display: flex;
+			font-family: $WorkSans;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #919ba3;
+			margin-bottom: 10px;
+			img {
+				width: 100%;
+				max-width: 25px;
+				height: 18px;
+				margin-right: 15px;
+				margin-top: 2px;
+			}
+		}
+	}
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 0 30px;
+		width: 100%;
+		max-width: 361px;
+		@media (max-width: 767px) {
+			margin: 0;
+		}
+		~.alert-message {
+			display: none;
+			margin: 0 0 0 30px;
+			width: 100%;
+			max-width: 361px;
+			&.is-active {			
+				display: flex;
+				flex-direction: column;
+			}
+			@media (max-width: 767px) {
+				margin: 0;
+			}
+		}
+		input, textarea {
+			width: 100%;
+			border: 1px solid #919ba3;
+			border-radius: 3px;
+			font-size: 14px;
+			line-height: 1;
+			padding: 11px 8px;
+			display: flex;
+			&::placeholder {
+				font-size: 14px;
+				color: #c2d1d9;
+			}
+			&.error {
+				margin-bottom: 5px;
+			}
+		}
+		input {
+			font-family: $WorkSans;
+			margin: 0 0 16px 0;
+		}
+		textarea {
+			height: 96px;
+		}
+		button {
+			padding: 10px 0;
+			margin-top: 16px;
+		}
+		.email-ico {
+			padding-left: 40px;
+			background-image: url('../images/email-ico.svg');
+			background-repeat: no-repeat;
+			background-size: 24px 22px;
+			background-position: 8px 50%;
+		}
+	}
+	// map
+	.map-section {
+		.map{
+			height: 556px;
+		}
+		.map-marker-label {
+			font-size: 14px;
+			position: absolute;
+			font-family: $WorkSans;
+			line-height: 1.71;
+			text-align: center;
+			color: #fff;
+			background-color: #424b5a;
+			padding: 25px 35px;
+			width: 280px;
+			border-radius: 5px;
+			.label-title {
+				font-size: 17px;
+				margin-bottom: 7px;
+			}
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: -5px;
+				left: calc(50% - 5px);
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 5px 0 5px;
+				border-color: #424b5a transparent transparent transparent;
+			}
+		}
+	}
+}

@@ -1,0 +1,281 @@
+.active-menu {
+	max-height: 100vh;
+	overflow: hidden;
+	.overlay{
+		&:after{
+			content: '';
+			background: rgba(0, 0, 0, 0.5);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			z-index: 3;
+		}
+	}
+}
+.wrap-nav {
+	box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+}
+.header {
+	.logo {
+		max-width: 170px;
+		padding-right: 0;
+		width: 100%;
+		@media only screen and (max-width: 544px) {
+			max-width: 120px;
+			padding-right: 0;
+		}
+	}
+}
+.head-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-container {
+	padding: 12px 0;
+	max-width: 1330px;
+	@media only screen and (max-width: 1400px) {
+		padding: 12px 20px;
+	}
+}
+.list-menu {
+	margin: 0 0 0 auto;
+	width: 100%;
+	max-width: 80%;
+	align-items: center;
+	@media only screen and (min-width: 1280px) {
+		max-width: 74%;
+	}
+	li {
+		padding-right: 26px;
+		line-height: 1.6;
+		@media (max-width: 991px) {
+			padding: 10px 0;
+		}
+		&.wrap-btn {
+			margin: 0 0 0 auto;
+			padding-right: 0;
+		}
+		a {
+			font-family: 'Work Sans', sans-serif;
+			color: #424b5a;
+			font-size: 14px;
+			text-transform: uppercase;
+			@media only screen and (max-width: 991px) {
+				display: flex;
+				justify-content: center;
+			}
+			&.is-active {
+				color: #c01621;
+			}
+		}
+	}
+}
+/*mobile header btn*/
+.header_btn {
+	position: relative;
+	span {
+		height: 2px;
+		position: absolute;
+	}
+}
+.bit-1{
+	margin-top: -17px;
+	width: 50px;
+	margin-left: -14px;
+	@media (max-width: 544px) {
+		width: 30px;
+		margin-top: -13px;
+	}
+	&:before {
+		left: 0;
+		transform-origin: left bottom;
+	}
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 50%;
+		background: #424b5a;
+		top: 0;
+		transition: transform .1s, top .1s;
+	}
+	&:after {
+		right: 0;
+		transform-origin: right bottom;
+	}
+}
+.bit-2 {
+	left: 50%;
+	margin-left: -14px;
+	margin-top: -3px;
+	text-align: center;
+	&:before {
+		content: '';
+		width: 50px;
+		height: 100%;
+		background: #424b5a;
+		display: inline-block;
+		vertical-align: top;
+		transition: width .1s;
+		transition-delay: 0.1s;
+		@media (max-width: 544px) {
+			width: 30px;
+		}
+	}
+}
+.bit-3 {
+	width: 50px;
+	margin-left: -14px;
+	margin-top: 12px;
+	@media (max-width: 544px) {
+		width: 30px;
+		margin-top: 7px;
+	}
+	&:before {
+		left: 0; 
+		transform-origin: left top;
+	}
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		background: #424b5a;
+		transition: transform .1s, bottom .1s;
+		bottom: 0;
+	}
+	&:after {
+		right: 0;
+		transform-origin: right top;
+	}
+}
+.opened {
+	.bit-1 {
+		width: 32px;
+		@media (max-width: 544px) {
+			width: 23px;
+		}
+		&:before {
+			width: 23px;
+			transform: rotate(45deg);
+			transition-delay: 0.2s;
+			@media (max-width: 544px){
+				width: 23px;
+			}
+		}
+		&:before, 
+		&:after {
+			top: -0px;
+		}
+		&:after {
+			width: 23px;
+			transition-delay: 0.2s;
+			transform: rotate(-45deg);
+		}
+	}
+	.bit-2 {
+		margin-left: -3px;
+		&:before{
+			width: 0;
+			transition-delay: 0;
+		}
+	}
+	.bit-3{
+		width: 32px;
+		@media (max-width: 544px) {
+			width: 23px;
+		}
+		&:before {
+			transform: rotate(-45deg);
+		}
+		&:before,
+		&:after {
+			width: 23px;
+			transition-delay: 0.2s;
+			bottom: -2px;
+		}
+		&:after {
+			transform: rotate(45deg);
+		}
+	}
+}
+.navbar-toggler {
+	padding: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	position: relative;
+	z-index: 12;
+	padding: 18px 36px 15px 15px;
+	border: 1px solid transparent;
+	background-color: transparent;
+	@media (max-width: 544px) {
+		padding: 14px 17px 10px 15px;
+	}
+}
+.navbar-toggler:focus {
+	outline: none;
+}
+.wrap-nav-list {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	@media only screen and (min-width: 1280px) {
+		margin-left: 50px;
+	}
+}
+.custom_navbar {
+	display: flex;
+	@media only screen and (min-width: 992px) {
+		display: none;
+	}
+}
+/*END mobile header btn*/
+
+@media only screen and (max-width: 991px) {
+	.list-menu {
+		background-color: #fff;
+		box-shadow: 0 6px 20px 0 rgba(13, 51, 32, 0.1);
+		display: block;
+		position: fixed;
+		transition: all 0.5s;
+		top: 0;
+		right: -400px;
+		width: 40%;
+		z-index: 11;
+		height: 100vh;
+		padding: 90px 20px 30px;
+		li{
+			margin: 0;
+			&.wrap-btn {
+				max-width: 146px;
+				margin: auto;
+			}
+		}
+	}
+	.menu-open {
+		right: 0;
+		top: 0;
+		min-width: 270px;
+		position: fixed;
+	}
+	
+	.login-box {
+		li {
+			a {
+				&.orange-btn {
+				}
+				&.sign-in {
+					padding: 0;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
